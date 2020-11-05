@@ -81,8 +81,7 @@ $(document).on("click", ".btnEditarUsuario" ,function(){
 
 			$("#editarNombre").val(respuesta["nombre"]);
 			$("#editarUsuario").val(respuesta["usuario"]);
-			$("#editarPerfil").html(respuesta["perfil"]);
-			$("#editarPerfil").val(respuesta["perfil"]);
+			$("#editarPerfil").val(respuesta['perfil']);
 			$("#passwordActual").val(respuesta["password"]);
 			$("#fotoActual").val(respuesta["foto"]);
 
@@ -240,8 +239,17 @@ $(document).on("click",'.btnEliminarUsuario', function() {
 	
 });
 
-
 /*=====  End of Eliminar Usuario  ======*/
+
+/*=============================================
+=            Borrar datos modal               =
+=============================================*/
+$('.modal').on('hidden.bs.modal', function(){ 
+//borra el contenido de todos los campos de un modal al cerrarse y
+//asigna un nuevo valor a la clase previzualizar
+	$("label.error").remove();  //lo utilice para borrar la etiqueta de error del jquery validate
+	$(".previsualizar").attr("src", "images/foto/AdminMaleAvatar.png");
+});
 
 
 

@@ -15,6 +15,14 @@
 		
 		}
 
+		// MOSTRAR GRAFICO DE TEMPERATURA 
+		static public function ctrHistoricoTemperatura($tabla){			
+
+			$respuesta = temperaturaModelo::mdlHistoricoTemperatura($tabla);
+
+			return $respuesta;
+		}
+
 
 		static public function ctrCrearCuarto(){
 				
@@ -24,11 +32,13 @@
 
                 	$tabla = "temp_habitaciones";
 
-
                 	$datos = array("nombre" => $_POST["nuevoCuarto"],
-                					"temp" => $_POST["temp"],
-                					"hum" => $_POST["hum"],
-                					"tvo" => $_POST["tvo"]);
+                					"min_temp" => $_POST["minTemp"],
+                					"min_hum" => $_POST["minHum"],
+									"min_tvo" => $_POST["minGas"],
+									"max_temp" => $_POST["maxTemp"],
+									"max_hum" => $_POST["maxHum"],
+									"max_tvo" => $_POST["maxGas"]);
 
 
                 	$respuesta = temperaturaModelo::mdlIngresarCuarto($tabla, $datos);
@@ -160,9 +170,12 @@
                     $idTemp = $_POST['idActual'];
 					$datos = array("id" => $idTemp,
 									"nombre" => $_POST["editarCuarto"],
-		                    		"temp" => $_POST["editarTemp"],
-		                    		"hum" => $_POST["editarHum"],
-		                    		"tvo" => $_POST["editarTvo"]);
+		                    		"min_temp" => $_POST["editarMinTemp"],
+		                    		"min_hum" => $_POST["editarMinHum"],
+									"min_tvo" => $_POST["editarMinGas"],
+		                    		"max_temp" => $_POST["editarMaxTemp"],
+		                    		"max_hum" => $_POST["editarMaxHum"],
+		                    		"max_tvo" => $_POST["editarMaxGas"]);
 
 		            $respuesta = temperaturaModelo::mdlEditarTemperatura($tabla, $datos);
 
@@ -221,6 +234,7 @@
 			}
 
 		}
+
 	}
 
 

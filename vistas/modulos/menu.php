@@ -194,6 +194,28 @@
             </a>
             
           </li>
+
+
+          <!-- =============================================
+          =           REPORTES           =
+          ============================================= -->
+
+          <li class="nav-item has-treeview">
+
+            <a href="reportes" class="nav-link">
+
+             <i class="nav-icon fas fa-check-double"></i>
+
+              <p>
+
+                Modulo Reportes
+
+              </p>
+
+            </a>
+            
+          </li>
+        
         
         </ul>
 

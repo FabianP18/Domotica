@@ -8,7 +8,7 @@
 
           <div class="col-sm-6">
 
-            <h1>Puertas</h1>
+            <h1>Puerta</h1>
 
           </div>
 
@@ -18,7 +18,7 @@
 
               <li class="breadcrumb-item"><a href="inicio">Inicio</a></li>
 
-              <li class="breadcrumb-item active" style="color:white;">Puertas</li>
+              <li class="breadcrumb-item active" style="color:white;">Puerta</li>
 
             </ol>
 

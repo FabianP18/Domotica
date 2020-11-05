@@ -3,6 +3,6 @@
 
 	echo '<script>
 
-			window.location = "ingresar";
+			window.location = "login";
 			
 		</script>';

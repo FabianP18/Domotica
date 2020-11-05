@@ -11,6 +11,7 @@
 	require_once "./controlador/temperaturaControlador.php";
 	require_once "./controlador/ventanasControlador.php";
 	require_once "./controlador/usuarioControlador.php";
+	require_once "./controlador/iluminacionControlador.php";
 
 
 	/*=============================================
@@ -23,6 +24,9 @@
 	require_once "./modelo/temperaturaModelo.php";
 	require_once "./modelo/ventanasModelo.php";
 	require_once "./modelo/usuarioModelo.php";
+	require_once "./modelo/iluminacionModelo.php";
+
+
 
 	$plantilla = new PlantillaControlador();
 
